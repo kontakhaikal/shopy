@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  larashopdb:
+    container_name: shopy
+    image: docker.io/library/postgres:16.1-alpine3.19
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=shopy
+      - POSTGRES_PASSWORD=shopy
+      - POSTGRES_DB=shopy
+    restart: always

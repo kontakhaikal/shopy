@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property string id
- * @property float balance
+ * @property int balance
  */
 class Wallet extends Model
 {

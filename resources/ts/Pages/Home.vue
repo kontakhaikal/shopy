@@ -2,7 +2,7 @@
 import Button from "../components/Button.vue";
 import ProductCard from "../components/ProductCard.vue";
 import SearchBar from "../components/SearchBar.vue";
-import { ShoppingCart } from "../components/icons";
+import { ShoppingCart, Wallet } from "../components/icons";
 
 export interface Product {
     id: string;
@@ -26,6 +26,13 @@ const props = defineProps<{ products: Product[] }>();
                     class="rounded-full p-2 text-slate-950 hover:bg-slate-50 border"
                 >
                     <ShoppingCart />
+                </button>
+            </a>
+            <a href="/wallet">
+                <button
+                    class="rounded-full p-2 text-slate-950 hover:bg-slate-50 border"
+                >
+                    <Wallet />
                 </button>
             </a>
         </nav>

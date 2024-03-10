@@ -18,7 +18,7 @@ class CartServiceImpl implements CartService
     public function createCart(string $customerId): string
     {
         $cart = new Cart();
-        $cart->customer_id = $customerId;
+        $cart->id = $customerId;
 
         $cart->save();
 
@@ -27,7 +27,7 @@ class CartServiceImpl implements CartService
 
     public function getCart(string $customerId): CartDto
     {
-        $cart = Cart::where('customer_id', $customerId)->first();
+        $cart = Cart::with(['items', 'items.product'])->where('id', $customerId)->first();
 
         if (is_null($cart)) {
             throw new CartNotFoundException();
@@ -51,7 +51,7 @@ class CartServiceImpl implements CartService
 
     public function addItem(string $customerId, AddCartItemRequest $request): string
     {
-        $cart = Cart::where('customer_id', $customerId)->first();
+        $cart = Cart::where('id', $customerId)->first();
 
         if (is_null($cart)) {
             throw new CartNotFoundException();
@@ -63,13 +63,17 @@ class CartServiceImpl implements CartService
             throw new ProductNotFoundException();
         }
 
-        $item = new CartItem();
+        $item = CartItem::where('product_id', $product->id)->first();
 
-        $item->product_id = $product->id;
-        $item->selected = true;
-        $item->quantity = $product->stock > 0 ? 1 : 0;
+        if (is_null($item)) {
+            $item = new CartItem();
 
-        $cart->items()->save($item);
+            $item->product_id = $product->id;
+            $item->selected = true;
+            $item->quantity = $product->stock > 0 ? 1 : 0;
+
+            $cart->items()->save($item);
+        }
 
         return $item->id;
     }

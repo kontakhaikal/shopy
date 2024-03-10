@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useForm } from "@inertiajs/vue3";
 import type { Product } from "../Pages/Home.vue";
+import { formatCurrency } from "../utils";
 import Button from "./Button.vue";
 
 const props = defineProps<{ product: Product }>();
@@ -31,7 +32,9 @@ const addToCart = () => {
             <p class="text-lg font-semibold">
                 {{ props.product.name }}
             </p>
-            <p class="text-slate-700">${{ props.product.price }}</p>
+            <p class="text-slate-700">
+                {{ formatCurrency(props.product.price, "IDR") }}
+            </p>
         </div>
         <div class="flex flex-col gap-y-2 px-4 pb-4 mt-4">
             <Button

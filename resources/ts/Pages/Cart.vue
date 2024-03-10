@@ -2,6 +2,7 @@
 import { useForm } from "@inertiajs/vue3";
 import { Ref, computed, ref } from "vue";
 import Button from "../components/Button.vue";
+import { formatCurrency } from "../utils";
 import { Product } from "./Home.vue";
 
 interface Cart {
@@ -79,7 +80,12 @@ const checkOut = () => {
                                         {{ item.product.name }}
                                     </p>
                                     <p class="text-slate-700">
-                                        ${{ item.product.price }}
+                                        {{
+                                            formatCurrency(
+                                                item.product.price,
+                                                "IDR"
+                                            )
+                                        }}
                                     </p>
                                 </div>
                                 <div class="flex gap-x-2 items-center">
@@ -119,7 +125,12 @@ const checkOut = () => {
                         <div class="px-4 flex gap-x-6">
                             <p class="text-slate-700">Sub Total:</p>
                             <p class="font-semibold text-lg">
-                                ${{ item.quantity * item.product.price }}
+                                {{
+                                    formatCurrency(
+                                        item.quantity * item.product.price,
+                                        "IDR"
+                                    )
+                                }}
                             </p>
                         </div>
                     </li>
@@ -130,7 +141,9 @@ const checkOut = () => {
                         <p class="font-semibold text-lg">Cart Summary</p>
                         <div class="flex mt-4 gap-x-6">
                             <p class="text-slate-700">Total Price:</p>
-                            <p class="font-semibold">${{ totalPrice }}</p>
+                            <p class="font-semibold">
+                                {{ formatCurrency(totalPrice, "IDR") }}
+                            </p>
                         </div>
                         <div class="mt-6 flex flex-col gap-y-2">
                             <Button variant="secondary">Save Changes</Button>

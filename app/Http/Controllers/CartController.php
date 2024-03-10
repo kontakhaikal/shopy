@@ -23,8 +23,7 @@ class CartController extends Controller
 
     public function storeItem(Request $request, AddCartItemRequest $body)
     {
-        $id = $this->cartService->addItem($request->user()->id, $body);
-        dd($id);
+        $this->cartService->addItem($request->user()->id, $body);
         return to_route('cart');
     }
 }

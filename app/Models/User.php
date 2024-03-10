@@ -16,4 +16,8 @@ class User extends Model implements AuthenticableContract
     protected $casts = [
         'password' => 'hashed'
     ];
+
+    protected $hidden =  [
+        'pasword', 'remember_token'
+    ];
 }

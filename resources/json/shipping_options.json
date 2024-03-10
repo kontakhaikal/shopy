@@ -1,0 +1,206 @@
+[
+    {
+        "id": 1,
+        "name": "Aceh",
+        "standard_shipping_cost": 20000,
+        "express_shipping_cost": 35000
+    },
+    {
+        "id": 2,
+        "name": "Sumatera Utara",
+        "standard_shipping_cost": 25000,
+        "express_shipping_cost": 38000
+    },
+    {
+        "id": 3,
+        "name": "Sumatera Barat",
+        "standard_shipping_cost": 24000,
+        "express_shipping_cost": 37000
+    },
+    {
+        "id": 4,
+        "name": "Riau",
+        "standard_shipping_cost": 23000,
+        "express_shipping_cost": 36000
+    },
+    {
+        "id": 5,
+        "name": "Jambi",
+        "standard_shipping_cost": 23000,
+        "express_shipping_cost": 36000
+    },
+    {
+        "id": 6,
+        "name": "Sumatera Selatan",
+        "standard_shipping_cost": 24000,
+        "express_shipping_cost": 37000
+    },
+    {
+        "id": 7,
+        "name": "Bengkulu",
+        "standard_shipping_cost": 24000,
+        "express_shipping_cost": 37000
+    },
+    {
+        "id": 8,
+        "name": "Lampung",
+        "standard_shipping_cost": 24000,
+        "express_shipping_cost": 37000
+    },
+    {
+        "id": 9,
+        "name": "Kepulauan Bangka Belitung",
+        "standard_shipping_cost": 25000,
+        "express_shipping_cost": 38000
+    },
+    {
+        "id": 10,
+        "name": "Kepulauan Riau",
+        "standard_shipping_cost": 25000,
+        "express_shipping_cost": 38000
+    },
+    {
+        "id": 11,
+        "name": "DKI Jakarta",
+        "standard_shipping_cost": 5000,
+        "express_shipping_cost": 10000
+    },
+    {
+        "id": 12,
+        "name": "Jawa Barat",
+        "standard_shipping_cost": 6000,
+        "express_shipping_cost": 12000
+    },
+    {
+        "id": 13,
+        "name": "Jawa Tengah",
+        "standard_shipping_cost": 6000,
+        "express_shipping_cost": 12000
+    },
+    {
+        "id": 14,
+        "name": "Yogyakarta",
+        "standard_shipping_cost": 6000,
+        "express_shipping_cost": 12000
+    },
+    {
+        "id": 15,
+        "name": "Jawa Timur",
+        "standard_shipping_cost": 5500,
+        "express_shipping_cost": 11000
+    },
+    {
+        "id": 16,
+        "name": "Banten",
+        "standard_shipping_cost": 6000,
+        "express_shipping_cost": 12000
+    },
+    {
+        "id": 17,
+        "name": "Bali",
+        "standard_shipping_cost": 6500,
+        "express_shipping_cost": 13000
+    },
+    {
+        "id": 18,
+        "name": "Nusa Tenggara Barat",
+        "standard_shipping_cost": 7000,
+        "express_shipping_cost": 14000
+    },
+    {
+        "id": 19,
+        "name": "Nusa Tenggara Timur",
+        "standard_shipping_cost": 7500,
+        "express_shipping_cost": 15000
+    },
+    {
+        "id": 20,
+        "name": "Kalimantan Barat",
+        "standard_shipping_cost": 8000,
+        "express_shipping_cost": 16000
+    },
+    {
+        "id": 21,
+        "name": "Kalimantan Tengah",
+        "standard_shipping_cost": 8000,
+        "express_shipping_cost": 16000
+    },
+    {
+        "id": 22,
+        "name": "Kalimantan Selatan",
+        "standard_shipping_cost": 8000,
+        "express_shipping_cost": 16000
+    },
+    {
+        "id": 23,
+        "name": "Kalimantan Timur",
+        "standard_shipping_cost": 8000,
+        "express_shipping_cost": 16000
+    },
+    {
+        "id": 24,
+        "name": "Kalimantan Utara",
+        "standard_shipping_cost": 8500,
+        "express_shipping_cost": 17000
+    },
+    {
+        "id": 25,
+        "name": "Sulawesi Utara",
+        "standard_shipping_cost": 9000,
+        "express_shipping_cost": 18000
+    },
+    {
+        "id": 26,
+        "name": "Sulawesi Tengah",
+        "standard_shipping_cost": 9000,
+        "express_shipping_cost": 18000
+    },
+    {
+        "id": 27,
+        "name": "Sulawesi Selatan",
+        "standard_shipping_cost": 9000,
+        "express_shipping_cost": 18000
+    },
+    {
+        "id": 28,
+        "name": "Sulawesi Tenggara",
+        "standard_shipping_cost": 9000,
+        "express_shipping_cost": 18000
+    },
+    {
+        "id": 29,
+        "name": "Gorontalo",
+        "standard_shipping_cost": 9000,
+        "express_shipping_cost": 18000
+    },
+    {
+        "id": 30,
+        "name": "Sulawesi Barat",
+        "standard_shipping_cost": 9000,
+        "express_shipping_cost": 18000
+    },
+    {
+        "id": 31,
+        "name": "Maluku",
+        "standard_shipping_cost": 9500,
+        "express_shipping_cost": 19000
+    },
+    {
+        "id": 32,
+        "name": "Maluku Utara",
+        "standard_shipping_cost": 9500,
+        "express_shipping_cost": 19000
+    },
+    {
+        "id": 33,
+        "name": "Papua Barat",
+        "standard_shipping_cost": 29000,
+        "express_shipping_cost": 39000
+    },
+    {
+        "id": 34,
+        "name": "Papua",
+        "standard_shipping_cost": 30000,
+        "express_shipping_cost": 40000
+    }
+]

@@ -5,6 +5,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\SessionController;
+use App\Http\Controllers\WalletController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -34,4 +35,10 @@ Route::middleware(['auth', 'role:customer'])->group(function () {
     Route::post('/checkout', [OrderController::class, 'prepare']);
 
     Route::post('/cart/items', [CartController::class, 'storeItem']);
+
+    Route::get('/wallet', [WalletController::class, 'show'])->name('wallet');
+    Route::post('/wallet/top-up', [WalletController::class, 'topUp']);
+
+    Route::post('/orders', [OrderController::class, 'createOrder']);
+    Route::get('/orders', [OrderController::class, 'show']);
 });
